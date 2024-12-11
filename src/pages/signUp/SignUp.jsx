@@ -44,7 +44,7 @@ const SignUp = () => {
       //toast.error('error.message')
       return
     }
-    if (/[A-Z]/.test(password)) {
+    if (!/[A-Z]/.test(password)) {
       Swal.fire({
         position: "top-end",
         icon: "error",
@@ -116,7 +116,7 @@ const SignUp = () => {
       <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900'>
         <div className='mb-8 text-center'>
           <h1 className='my-3 text-4xl font-bold'>Sign Up</h1>
-          <p className='text-sm text-gray-400'>Welcome to Eduction-Elite</p>
+          <p className='text-sm text-gray-400'>Welcome to EdAid</p>
         </div>
         <form
           onSubmit={handleSubmit}
