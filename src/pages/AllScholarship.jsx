@@ -76,7 +76,7 @@ const AllScholarship = () => {
 
         <div className="text-center">
            
-            <h2 className="text-5xl capitalize">all scholarship</h2>
+            <h2 className="text-5xl capitalize">All scholarships</h2>
             <p className="mt-3 w-1/2 mx-auto">From educators to nonprofit professionals, the Event Scholarship Program provides a unique opportunity for leaders to further enhance their skills </p>
 
         </div>

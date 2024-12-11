@@ -92,7 +92,7 @@ const SholarshipDetails = () => {
     return (
         <div className="max-w-[1420px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4">
             <Helmet>
-                <title>Education Elite | SholarshipDetails </title>
+                <title>EdAid | SholarshipDetails </title>
             </Helmet>
 
             <div className="bg-gray-100 dark:bg-gray-800 py-8">

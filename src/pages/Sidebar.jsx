@@ -33,7 +33,7 @@ const Sidebar = () => {
                   height='60'
                  className="rounded-full"
                 />
-                Education-Elite
+                EdAid
               </Link>
             </div>
           </div>

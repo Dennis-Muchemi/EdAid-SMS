@@ -10,7 +10,7 @@ import 'react-date-range/dist/theme/default.css'
 import { useState } from "react";
 
 
-const EditScholarShipForm = () => {
+const EditScholarshipForm = () => {
     const { register, handleSubmit } = useForm();
     const sholarship = useLoaderData();
     const [dates, setDates] = useState({
@@ -26,7 +26,7 @@ const EditScholarShipForm = () => {
     const axiosSecure = useAxiosSecure()
     const { mutateAsync } = useMutation({
         mutationFn: async updateData => {
-            const { data } = await axiosSecure.put(`/ScholarShips/${sholarship._id}`, updateData)
+            const { data } = await axiosSecure.put(`/Scholarships/${sholarship._id}`, updateData)
             return data
         },
         onSuccess: () => {
@@ -34,7 +34,7 @@ const EditScholarShipForm = () => {
             Swal.fire({
                 position: "top-end",
                 icon: "success",
-                title: "Your items has been Edit",
+                title: "Your item has been edited",
                 showConfirmButton: false,
                 timer: 1500
             });
@@ -45,7 +45,7 @@ const EditScholarShipForm = () => {
         
         const image_url = await imageUpload(data.image[0])
 
-        const ScholarShipItem = {
+        const ScholarshipItem = {
             ScholarshipName: data.ScholarshipName,
             UniversityName: data.UniversityName,
             image: image_url,
@@ -66,13 +66,13 @@ const EditScholarShipForm = () => {
     
 
         try {
-            await mutateAsync(ScholarShipItem)
+            await mutateAsync(ScholarshipItem)
         }
         catch (err) {
             Swal.fire({
                 position: "top-end",
                 icon: "Error",
-                title: "Your items not  Edit ",
+                title: "Your item not  edited ",
                 showConfirmButton: false,
                 timer: 1500
             });
@@ -272,4 +272,4 @@ const EditScholarShipForm = () => {
     );
 };
 
-export default EditScholarShipForm;
+export default EditScholarshipForm;

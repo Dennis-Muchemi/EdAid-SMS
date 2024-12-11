@@ -29,7 +29,7 @@ const ApplyScholearshipsRow = ({ scholarship, refetch }) => {
       Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Application Status update successfully",
+        title: "Application Status update successful",
         showConfirmButton: false,
         timer: 1500
       });

@@ -23,7 +23,7 @@ const AddScholarShipForm = () => {
 
     const onSubmit = async data => {
         const image_url = await imageUpload(data.image[0])
-        const ScholarShipItem = {
+        const ScholarshipItem = {
             ScholarshipName: data.ScholarshipName,
             UniversityName: data.UniversityName,
             image: image_url,
@@ -44,13 +44,13 @@ const AddScholarShipForm = () => {
 
         }
         try {
-            const { data } = await axiosSecure.post(`/addScholarShip`, ScholarShipItem)
+            const { data } = await axiosSecure.post(`/addScholarShip`, ScholarshipItem)
           
             if (data.insertedId) {
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Your items has been add",
+                    title: "Your item has been added",
                     showConfirmButton: false,
                     timer: 1500
                 });
@@ -90,7 +90,7 @@ const AddScholarShipForm = () => {
                         <label htmlFor="University-Name" className="label">
                             <span className="label-text">University Name</span>
                         </label>
-                        <input type="text" placeholder="type your University Name" name="University-Name" id="text" className="input input-bordered" required
+                        <input type="text" placeholder="Type your University Name" name="University-Name" id="text" className="input input-bordered" required
                             {...register("UniversityName",)} />
 
                     </div>
@@ -119,7 +119,7 @@ const AddScholarShipForm = () => {
                         <label htmlFor="city" className="label">
                             <span className="label-text">University city</span>
                         </label>
-                        <input type="text" placeholder="type your University city name" name="city" id="text" className="input input-bordered" required
+                        <input type="text" placeholder="Type your University city name" name="city" id="text" className="input input-bordered" required
                             {...register("city",)} />
 
                     </div>

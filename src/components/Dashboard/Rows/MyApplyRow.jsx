@@ -27,7 +27,7 @@ const MyApplyRow = ({apply,handleDelete,isPending,refetch}) => {
         onSuccess: data => {
            
             refetch()
-            toast.success('user role update successfully')
+            toast.success('user role update successful')
             setIsOpen(false)
 
         }
@@ -55,7 +55,7 @@ const MyApplyRow = ({apply,handleDelete,isPending,refetch}) => {
                 Swal.fire({
                     position: "top-end",
                     icon: "error",
-                    title: "Your items not  Edit your application in processing",
+                    title: "Your item not edited! Your application in processing",
                     showConfirmButton: false,
                     timer: 1500
                 }); 

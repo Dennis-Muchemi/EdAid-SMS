@@ -13,7 +13,7 @@ const ApplyScholarshipForm = ({ UniversityName,ScholarshipName, total, Scholarsh
 
     const onSubmit = async data => {
         const image_url = await imageUpload(data.image[0])
-        const applyShipItem = {
+        const applyshipItem = {
             phoneNumber: data.phoneNumber,
             image: image_url,
             location: {
@@ -41,13 +41,13 @@ const ApplyScholarshipForm = ({ UniversityName,ScholarshipName, total, Scholarsh
        
 
         try {
-            const { data } = await axiosSecure.post(`/applyScholarShip`, applyShipItem)
+            const { data } = await axiosSecure.post(`/applyScholarship`, applyshipItem)
             // console.log(data)
             if (data.insertedId) {
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Your items has been add",
+                    title: "Your item has been added",
                     showConfirmButton: false,
                     timer: 1500
                 });
@@ -140,7 +140,7 @@ const ApplyScholarshipForm = ({ UniversityName,ScholarshipName, total, Scholarsh
                         className="block mt-4 mb-2 dark:text-white"
                         htmlFor="Degree"
                     >
-                        Appliying   Degree
+                        Applying   Degree
                     </label>
                     <select
                         {...register("Degree",)}
@@ -199,7 +199,7 @@ const ApplyScholarshipForm = ({ UniversityName,ScholarshipName, total, Scholarsh
                 </div>
                 <div className="form-control">
                     <label htmlFor="city" className="label">
-                        <span className="label-text">University name</span>
+                        <span className="label-text">University Name</span>
                     </label>
                     <input type="text" defaultValue={UniversityName} readOnly placeholder="type your University city name" name="city" id="text" className="input input-bordered" required
                         {...register("universityName",)} />

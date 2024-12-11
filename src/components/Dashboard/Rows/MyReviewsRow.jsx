@@ -21,7 +21,7 @@ const MyReviewsRow = ({ review, handleDelete,isLoading,refetch }) => {
         onSuccess: data => {
             // console.log(data)
              refetch()
-            toast.success('user role update successfully')
+            toast.success('user role update successful')
             setIsOpen(false)
 
         }

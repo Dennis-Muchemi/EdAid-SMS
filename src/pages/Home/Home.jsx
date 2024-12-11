@@ -16,13 +16,13 @@ import AdditionalInfo from "../../components/pages/AdditionalInfo";
 
 const Home = () => {
     const [dataLength, setDataLength] = useState(6);
-    const [allScholarShip] = useScholarships()
+    const [allScholarship] = useScholarships()
 
 
     return (
         <div>
             <Helmet>
-                <title>Education Elite | Home </title>
+                <title>EdAId | Home </title>
             </Helmet>
             <Container>
                 <Carousel></Carousel>
@@ -36,7 +36,7 @@ const Home = () => {
                 <div id="gridLayout" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
 
                     {
-                        allScholarShip.slice(0, dataLength).map(item => <ScholarshipItems
+                        allScholarship.slice(0, dataLength).map(item => <ScholarshipItems
                             key={item._id}
                             item={item}
 

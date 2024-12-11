@@ -4,11 +4,11 @@ import useAxiosSecure from "../../hooks/useAxiosSecure";
 // import useCart from "../../hook/useCart";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
-import AddScholarShipForm from "../../components/Dashboard/Form/AddScholarshipForm";
+import AddScholarshipForm from "../../components/Dashboard/Form/AddScholarshipForm";
 import ApplyScholarshipForm from "../../components/Dashboard/Form/ApplyScholarshipForm";
 // import { useNavigate } from "react-router-dom";
 
-const ChackoutForm = ({total,id,ScholarshipName,UniversityName,ScholarshipCategory,SubjectCategorey}) => {
+const CheckoutForm = ({total,id,ScholarshipName,UniversityName,ScholarshipCategory,SubjectCategory}) => {
   const [error, setError] = useState()
   const [clientSecret, setClientSecret] = useState("");
   const [transactionId,setTransactionId] = useState('');
@@ -88,7 +88,7 @@ const ChackoutForm = ({total,id,ScholarshipName,UniversityName,ScholarshipCatego
           Swal.fire({
             position: "top-end",
             icon: "success",
-            title: "Your payment successfuly",
+            title: "Your payment was successful",
             showConfirmButton: false,
             timer: 1500
         });
@@ -130,10 +130,10 @@ const ChackoutForm = ({total,id,ScholarshipName,UniversityName,ScholarshipCatego
     <p className="text-green-600"> your transaction id:{transactionId}
     <h2>user name:</h2>
 </p>
-<ApplyScholarshipForm id={id} ScholarshipName={ScholarshipName} SubjectCategorey={SubjectCategorey}ScholarshipCategory={ScholarshipCategory} UniversityName={UniversityName} total={total} />
+<ApplyScholarshipForm id={id} ScholarshipName={ScholarshipName} SubjectCategory={SubjectCategory}ScholarshipCategory={ScholarshipCategory} UniversityName={UniversityName} total={total} />
 </>}
     </div>
   );
 };
 
-export default ChackoutForm;
+export default CheckoutForm;

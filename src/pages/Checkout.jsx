@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
-import ChackoutForm from '../pages/payment/ChackoutForm';
+import ChackoutForm from './payment/ChackoutForm';
 import useAuth from "../hooks/useAuth";
 
 const Chackout = () => {
@@ -17,7 +17,7 @@ const Chackout = () => {
         <div >
             <div className="capitalize text-center">
             <h2 className="text-3xl capitalize">welcome TO {user?.displayName}</h2>
-            <p>application payment info</p>
+            <p>Application payment info</p>
             <p>you total payment is : ${total}</p>
             </div>
         

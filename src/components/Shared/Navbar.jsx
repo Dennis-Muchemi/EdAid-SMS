@@ -27,7 +27,7 @@ const Navbar = () => {
                 height='60'
                 className=' rounded-full'
               />
-               Education-Elite
+               EdAid
             </Link>
            
             </div>
@@ -39,14 +39,14 @@ const Navbar = () => {
                 <div className='hidden md:flex gap-x-6 items-center'>
                   <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : 'default')}>Home</NavLink>
 
-                  <NavLink to='/allScholarship' className={({ isActive }) => (isActive ? 'active' : 'default')}>All Scholarship</NavLink>
+                  <NavLink to='/allScholarship' className={({ isActive }) => (isActive ? 'active' : 'default')}>All Scholarships</NavLink>
                   
                   {user && (
                  <NavLink
                  to='/Dashboard'
                  className='block  px-4 py-3 hover:bg-neutral-100 transition font-semibold'
                >
-                 Desboard
+                 Dashboard
                </NavLink>
                   )}
                 </div>
@@ -87,14 +87,14 @@ const Navbar = () => {
                           to='/allScholarship'
                           className='block  px-4 py-3 hover:bg-neutral-100 transition font-semibold'
                         >
-                         All Scholarship
+                         All Scholarships
                         </Link>
 
                         <Link
                           to='/Dashboard'
                           className='block  px-4 py-3 hover:bg-neutral-100 transition font-semibold'
                         >
-                          Desboard
+                          Dashboard
                         </Link>
                         <div
                           onClick={logOut}

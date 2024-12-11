@@ -13,7 +13,7 @@ import ManageReview from "../pages/bashboard/Admin/ManageReview";
 import Home from "../pages/Home/Home";
 import SholarshipDetails from "../pages/details/SholarshipDetails";
 import Payment from "../pages/payment/Payment";
-import Chackout from '../pages/Chackout'
+import Chackout from '../pages/Checkout'
 import AllScholarship from "../pages/AllScholarship";
 import EditScholarShipForm from "../components/Dashboard/Form/EditScholarshipForm";
 import MyApplication from "../pages/bashboard/user/MyApplication";

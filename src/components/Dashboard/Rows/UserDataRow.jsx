@@ -18,7 +18,7 @@ const UserDataRow = ({ user, refetch}) => {
     onSuccess: data => {
       refetch()
       // console.log(data)
-      toast.success('user role update successfully')
+      toast.success('user role updated successfully')
       setIsOpen(false)
 
     }
@@ -58,7 +58,7 @@ const UserDataRow = ({ user, refetch}) => {
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
-                        title: "user has been delete",
+                        title: "user has been deleted",
                         showConfirmButton: false,
                         timer: 1500
                     });

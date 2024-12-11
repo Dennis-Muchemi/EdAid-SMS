@@ -24,7 +24,7 @@ const Footer = () => {
                 height='60'
                 className=' rounded-full'
               />
-              <span className="text-2xl font-bold text-gray-900 capitalize">education elite</span>
+              <span className="text-2xl font-bold text-gray-900 capitalize">edAid</span>
             </Link>
                   
 
@@ -45,11 +45,11 @@ const Footer = () => {
            
 
             <li>
-            <Link to='/allscholarship' className="text-gray-700 transition hover:text-teal-500"> all scholarship </Link>
+            <Link to='/allscholarship' className="text-gray-700 transition hover:text-teal-500"> All scholarships </Link>
             </li>
 
             <li>
-              <a href="#" className="text-gray-700 transition hover:text-teal-500"> apply scholarship </a>
+              <a href="#" className="text-gray-700 transition hover:text-teal-500"> Apply scholarship </a>
             </li>
 
             
@@ -100,7 +100,7 @@ const Footer = () => {
    
     <div className="mt-8 border-t border-gray-100 pt-8">
       <div className="flex justify-center gap-x-8">
-        <p className="text-xs text-gray-500">&copy; 2024. <span className="text-teal-500" >Education Elite</span>. All rights reserved.</p>
+        <p className="text-xs text-gray-500">&copy; 2024. <span className="text-teal-500" >EdAid</span>. All rights reserved.</p>
   <div className="flex gap-x-1"> <div className="w-[2px] h-[20px] bg-slate-400"></div><div className="w-[2px] h-[20px] bg-slate-400"></div>
     </div>  
         <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">

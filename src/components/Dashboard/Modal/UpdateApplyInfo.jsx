@@ -41,7 +41,7 @@ const UpdateApplyInfo = ({ setIsOpen, isOpen, modalHandler, universityName }) =>
                                     as='h3'
                                     className='text-lg font-medium text-center leading-6 text-gray-900'
                                 >
-                                    UpDate application Info
+                                    Update application Info
                                 </DialogTitle>
                                 <IoClose onClick={() => setIsOpen(false)} className="text-3xl ml-auto bg-red-300 rounded" />
                                 <form action="" onSubmit={modalHandler}>
@@ -82,7 +82,7 @@ const UpdateApplyInfo = ({ setIsOpen, isOpen, modalHandler, universityName }) =>
                                             className="block mt-4 mb-2 dark:text-white"
                                             htmlFor="Degree"
                                         >
-                                            Appliying   Degree
+                                            Applying   Degree
                                         </label>
                                         <select
                                             
