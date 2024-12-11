@@ -1,16 +1,16 @@
 import { Helmet } from "react-helmet-async";
-import useScholearShips from "../../../hooks/useScholearShips";
-import ManageScholearshipsRow from '../../../components/Dashboard/Rows/ManageScholearshipsRow'
+import useScholarships from "../../../hooks/useScholarships";
+import ManageScholarshipsRow from '../../../components/Dashboard/Rows/ManageScholarshipsRow'
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import { useMutation } from "@tanstack/react-query";
 import Swal from "sweetalert2";
-const ManageScholerShips = () => {
-  const [allScholarShip, ,refetch] = useScholearShips()
+const ManageScholarships = () => {
+  const [allScholarShip, ,refetch] = useScholarships()
   const axiosSecure = useAxiosSecure()
   //   delete
   const { mutateAsync } = useMutation({
     mutationFn: async id => {
-      const { data } = await axiosSecure.delete(`/ScholarShips/${id}`)
+      const { data } = await axiosSecure.delete(`/Scholarships/${id}`)
       return data
     },
     onSuccess: data => {
@@ -19,7 +19,7 @@ const ManageScholerShips = () => {
       Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "ScholarShips has been delete",
+        title: "Scholarship has been deleted",
         showConfirmButton: false,
         timer: 1500
     });
@@ -45,7 +45,7 @@ const ManageScholerShips = () => {
   return (
     <div className='container mx-auto px-4 sm:px-8'>
       <Helmet>
-        <title>Manage ScholerShips</title>
+        <title>Manage Scholarships</title>
       </Helmet>
       <div className='py-8'>
         <div className='-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto'>
@@ -94,7 +94,7 @@ const ManageScholerShips = () => {
               </thead>
               <tbody>{/* User data table row */}
                 {
-                  allScholarShip.map(scholarship => <ManageScholearshipsRow key={scholarship._id} scholarship={scholarship} handleDelete={handleDelete}></ManageScholearshipsRow>)
+                  allScholarShip.map(scholarship => <ManageScholarshipsRow key={scholarship._id} scholarship={scholarship} handleDelete={handleDelete}></ManageScholarshipsRow>)
                 }
 
               </tbody>
@@ -106,4 +106,4 @@ const ManageScholerShips = () => {
   );
 };
 
-export default ManageScholerShips;
+export default ManageScholarships;

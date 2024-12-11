@@ -3,7 +3,7 @@
 import Carousel from "../../components/Carousel/Carousel";
 import Container from "../../components/Shared/Container";
 import ScholarshipItems from "../../components/Home/ScholarshipItems";
-import useScholearShips from "../../hooks/useScholearShips";
+import useScholarships from "../../hooks/useScholarships";
 import ContactUs from "../contactus/ContactUs";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -16,7 +16,7 @@ import AdditionalInfo from "../../components/pages/AdditionalInfo";
 
 const Home = () => {
     const [dataLength, setDataLength] = useState(6);
-    const [allScholarShip] = useScholearShips()
+    const [allScholarShip] = useScholarships()
 
 
     return (

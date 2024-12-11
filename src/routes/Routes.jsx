@@ -7,7 +7,7 @@ import DashboardLayout from '../layouts/DashboardLayout'
 import Profile from "../pages/bashboard/common/Profile";
 import ManageUsers from '../pages/bashboard/Admin/ManageUsers'
 import AddScholarShip from "../pages/bashboard/Admin/AddScholarShip";
-import ManageScholerShips from "../pages/bashboard/Admin/ManageScholerShips";
+import ManageScholerShips from "../pages/bashboard/Admin/ManageScholarships";
 import ManageAppliedApplication from "../pages/bashboard/Admin/ManageAppliedApplication";
 import ManageReview from "../pages/bashboard/Admin/ManageReview";
 import Home from "../pages/Home/Home";
@@ -15,7 +15,7 @@ import SholarshipDetails from "../pages/details/SholarshipDetails";
 import Payment from "../pages/payment/Payment";
 import Chackout from '../pages/Chackout'
 import AllScholarship from "../pages/AllScholarship";
-import EditScholarShipForm from "../components/Dashboard/Form/EditScholarShipForm";
+import EditScholarShipForm from "../components/Dashboard/Form/EditScholarshipForm";
 import MyApplication from "../pages/bashboard/user/MyApplication";
 import MyReviews from "../pages/bashboard/user/MyReviews";
 import ApplicationsDetails from "../components/pages/ApplicationsDetails";

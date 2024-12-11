@@ -4,7 +4,7 @@ import useAxiosSecure from "../../hooks/useAxiosSecure";
 // import useCart from "../../hook/useCart";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
-import AddScholarShipForm from "../../components/Dashboard/Form/AddScholarShipForm";
+import AddScholarShipForm from "../../components/Dashboard/Form/AddScholarshipForm";
 import ApplyScholarshipForm from "../../components/Dashboard/Form/ApplyScholarshipForm";
 // import { useNavigate } from "react-router-dom";
 

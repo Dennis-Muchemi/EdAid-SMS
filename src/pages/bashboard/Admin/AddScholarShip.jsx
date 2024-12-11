@@ -1,4 +1,4 @@
-import AddScholarShipForm from '../../../components/Dashboard/Form/AddScholarShipForm'
+import AddScholarShipForm from '../../../components/Dashboard/Form/AddScholarshipForm'
 
 const AddScholarShip = () => {
     return (
