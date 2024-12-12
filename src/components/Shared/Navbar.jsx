@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 import useAuth from '../../hooks/useAuth';
 import avatarImg from '../../assets/user-profile.png'
-import logo from '../../assets/logo-12.png'
+import logo from '../../assets/logo-12.webp'
 
 const Navbar = () => {
   const { user, logOut } = useAuth()

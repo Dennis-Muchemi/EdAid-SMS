@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import Container from "../../components/Shared/Container";
-import logo from '../../assets/logo-12.png'
+import logo from '../../assets/logo-12.webp'
 const Footer = () => {
     return (
   

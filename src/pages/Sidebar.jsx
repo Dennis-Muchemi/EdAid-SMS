@@ -6,7 +6,7 @@ import { useState } from "react";
 import GuestMenu from "./bashboard/Menu/GuestMenu";
 import AdminMenu from './bashboard/Menu/AdminMenu'
 import useRole from "../hooks/useRole";
-import logo from'../assets/logo-12.png'
+import logo from'../assets/logo-12.webp'
 import LoadingSpinner from "../components/Shared/LoadingSpinner";
 import { AiOutlineBars } from "react-icons/ai";
 

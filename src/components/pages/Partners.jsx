@@ -3,12 +3,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import {  Autoplay } from 'swiper/modules';
-import img1 from '../../assets/1.png';
-import img2 from '../../assets/2.png'
-import img3 from '../../assets/3.png'
-import img4 from '../../assets/4.png'
-import img5 from '../../assets/5.png'
-import img6 from '../../assets/6.png'
+import img1 from '../../assets/1n.webp';
+import img2 from '../../assets/2n.webp'
+import img3 from '../../assets/3n.webp'
+import img4 from '../../assets/4n.webp'
+import img5 from '../../assets/5n.webp'
+import img6 from '../../assets/6n.webp'
 const Partners = () => {
     return (
         <div>
