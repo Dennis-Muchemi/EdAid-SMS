@@ -8,16 +8,19 @@ const useScholarships = () => {
         queryKey: ['allScholarShip'],
         queryFn: async () => {
             try {
-                const { data } = await axiosSecure.get(`/ScholarShip`);
+                // Fetch data from the API
+                const response = await axiosSecure.get(`/ScholarShip`);
+
                 // Ensure the response is an array
-                if (!Array.isArray(data)) {
-                    console.error("Expected an array but received:", data);
-                    return [];  // Return an empty array if data is not in the expected format
+                if (!Array.isArray(response.data)) {
+                    console.error("Expected an array but received:", response.data);
+                    throw new Error("API response is not a valid array");
                 }
-                return data;
+
+                return response.data;
             } catch (err) {
                 console.error("Error fetching scholarships:", err);
-                return [];  // Return an empty array in case of an error
+                throw err; // Let React Query handle the error state
             }
         },
         onError: (error) => {
@@ -25,7 +28,7 @@ const useScholarships = () => {
         },
     });
 
-    // Always return an array, even if `data` is undefined or invalid
+    // Default to an empty array if data is undefined or invalid
     const allScholarShip = Array.isArray(data) ? data : [];
 
     return [allScholarShip, loading, refetch, isError, error];
